@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/grocery.css' %}">
+</head>
+<body>
+      <nav>
+        <div class="logo">
+            <h1>ECOM</h1>
+        </div>
+        <div class="links">
+            <a href="{% url 'home'%}">home</a>
+            <a href="{% url 'about' %}">about</a>
+            <a href="{% url 'ele' %}">electronic</a>
+            <a href="{% url 'fashion' %}">fashion</a>
+            <a href="{% url 'mobile' %}">mobile</a>
+            <a href="{% url 'sports' %}">sports</a>
+        </div>
+    </nav>
+    <h1>THIS IS GROCERY PAGE</h1>
+     <div class="box">
+        <div class="card">
+            <img src="{% static 'images/gro1.webp' %}" alt="">
+            <h3>vegetables</h3>
+            <p>cost:according to the item</p>
+        </div>
+        <div class="card">
+        <img src="{% static 'images/gro2.webp' %}" alt="">
+            <h3>fruits</h3>
+            <p>cost:100-400</p>
+        </div>
+        <div class="card">
+       <img src="{% static 'images/gro3.webp' %}" alt="">
+            <h3>home needs</h3>
+            <p>cost:1000-2000</p>
+        </div>
+        <div class="card">
+        <img src="{% static 'images/gro4.webp' %}" alt="">
+            <h3>snacks</h3>
+            <p>cost:60-120</p>
+        </div>
+    </div>
+</body>
+</html>

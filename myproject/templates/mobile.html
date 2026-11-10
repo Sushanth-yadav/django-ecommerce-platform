@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/mobile.css' %}">
+</head>
+<body>
+      <nav>
+        <div class="logo">
+            <h1>ECOM</h1>
+        </div>
+        <div class="links">
+            <a href="{% url 'home'%}">home</a>
+            <a href="{% url 'about' %}">about</a>
+            <a href="{% url 'ele' %}">electronic</a>
+            <a href="{% url 'fashion' %}">fashion</a>
+            <a href="{% url 'grocery' %}">grocery</a>
+            <a href="{% url 'sports' %}">sports</a>
+        </div>
+    </nav>
+    <h1>THIS IS MOBILE PAGE</h1>
+    <div class="box">
+        <div class="card">
+            <img src="{% static 'images/mob1.webp' %}" alt="">
+            <h3>samsung galaxy</h3>
+            <p>cost:26000</p>
+        </div>
+        <div class="card">
+        <img src="{% static 'images/mob2.webp' %}" alt="">
+            <h3>google pixel</h3>
+            <p>cost:55000</p>
+        </div>
+        <div class="card">
+       <img src="{% static 'images/mob3.webp' %}" alt="">
+            <h3>one plus</h3>
+            <p>cost:39000</p>
+        </div>
+        <div class="card">
+        <img src="{% static 'images/mob4.webp' %}" alt="">
+            <h3>iqoo</h3>
+            <p>cost:26000</p>
+        </div>
+    </div>
+</body>
+</html>

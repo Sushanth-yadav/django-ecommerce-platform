@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>ECOM</h1>
+        </div>
+        <div class="links">
+            <a href="{% url 'about' %}">about</a>
+            <a href="{% url 'ele' %}">electronic</a>
+            <a href="{% url 'fashion' %}">fashion</a>
+            <a href="{% url 'grocery' %}">grocery</a>
+            <a href="{% url 'mobile' %}">mobile</a>
+            <a href="{% url 'sports' %}">sports</a>
+        </div>
+    </nav>
+    <h1>THIS IS HOME PAGE</h1>
+    <div class="box">
+        <div class="card">
+            <img src="{% static 'images/1.webp' %}" alt="">
+            <h3>human brain</h3>
+            <p>img cost:600</p>
+        </div>
+        <div class="card">
+        <img src="{% static 'images/2.jpg' %}" alt="">
+            <h3>mountains</h3>
+            <p>img cost:750</p>
+        </div>
+        <div class="card">
+       <img src="{% static 'images/3.jpg' %}" alt="">
+            <h3>city</h3>
+            <p>img cost:1000</p>
+        </div>
+        <div class="card">
+        <img src="{% static 'images/4.jpg' %}" alt="">
+            <h3>blue sky</h3>
+            <p>img cost:600</p>
+        </div>
+        <div class="card">
+        <img src="{% static 'images/5.jpg' %}" alt="">
+            <h3>sunset</h3>
+            <p>img cost:700</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/fashion.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>ECOM</h1>
+        </div>
+        <div class="links">
+            <a href="{% url 'home'%}">home</a>
+            <a href="{% url 'about' %}">about</a>
+            <a href="{% url 'ele' %}">electronic</a>
+            <a href="{% url 'grocery' %}">grocery</a>
+            <a href="{% url 'mobile' %}">mobile</a>
+            <a href="{% url 'sports' %}">sports</a>
+        </div>
+    </nav>
+    <h1>THIS IS FASHION PAGE</h1>
+     <div class="box">
+        <div class="card">
+            <img src="{% static 'images/fas1.webp' %}" alt="">
+            <h3>shirts</h3>
+            <p>cost:1600</p>
+        </div>
+        <div class="card">
+        <img src="{% static 'images/fas2.webp' %}" alt="">
+            <h3>t-shirts</h3>
+            <p>cost:750</p>
+        </div>
+        <div class="card">
+       <img src="{% static 'images/fas3.webp' %}" alt="">
+            <h3>pants</h3>
+            <p>cost:1000</p>
+        </div>
+        <div class="card">
+        <img src="{% static 'images/fas4.webp' %}" alt="">
+            <h3>jacket</h3>
+            <p>cost:2600</p>
+        </div>
+    </div>
+</body>
+</html>

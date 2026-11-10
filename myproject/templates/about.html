@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+<body>
+      <nav>
+        <div class="logo">
+            <h1>ECOM</h1>
+        </div>
+        <div class="links">
+            <a href="{% url 'home'%}">home</a>
+            <a href="{% url 'about' %}">about</a>
+            <a href="{% url 'ele' %}">electronic</a>
+            <a href="{% url 'fashion' %}">fashion</a>
+            <a href="{% url 'grocery' %}">grocery</a>
+            <a href="{% url 'mobile' %}">mobile</a>
+            <a href="{% url 'sports' %}">sports</a>
+        </div>
+    </nav>
+    <h1>THIS IS ABOUT PAGE</h1>
+    <p>his e-commerce web page is developed as a unified digital marketplace that aims to simplify and enhance the online shopping experience by offering a wide range of product categories under one platform. It is structured
+         to serve the everyday needs of users by providing easy access to essential goods as well as lifestyle and technology-related products. The platform includes major sections such as groceries, fashion, electronics, sports equipment, and mobile devices,
+          each organized in a way that allows smooth navigation and quick discovery of available products. Users can browse through different categories without difficulty, compare options, and explore what best suits their needs and preferences.
+
+The grocery section is designed to support daily household requirements by making essential items easily accessible, helping users manage their routine shopping without visiting physical stores. The fashion segment offers a variety of clothing and accessories suitable for different tastes,
+ seasons, and occasions, allowing users to stay updated with current styles. The electronics category includes modern gadgets and devices that support both personal entertainment and professional productivity, ensuring users have access to updated technology.
+  The sports section is dedicated to fitness enthusiasts and athletes, offering equipment and gear
+  that support active lifestyles and outdoor activities. Additionally, the mobile devices section provides smartphones and related accessories
+ that help users stay connected and engaged in the digital world.</p>
+</body>
+</html>

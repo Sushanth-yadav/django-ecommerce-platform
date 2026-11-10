@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/ele.css' %}">
+</head>
+<body>
+      <nav>
+        <div class="logo">
+            <h1>ECOM</h1>
+        </div>
+        <div class="links">
+            <a href="{% url 'home'%}">home</a>
+            <a href="{% url 'about' %}">about</a>
+            <a href="{% url 'fashion' %}">fashion</a>
+            <a href="{% url 'grocery' %}">grocery</a>
+            <a href="{% url 'mobile' %}">mobile</a>
+            <a href="{% url 'sports' %}">sports</a>
+        </div>
+    </nav>
+    <h1>THIS IS ELECTRONIC PAGE</h1>
+     <div class="box">
+        <div class="card">
+            <img src="{% static 'images/ele1.webp' %}" alt="">
+            <h3>camera</h3>
+            <p>cost:45000</p>
+        </div>
+        <div class="card">
+        <img src="{% static 'images/ele2.webp' %}" alt="">
+            <h3>ps5</h3>
+            <p>cost:85000</p>
+        </div>
+        <div class="card">
+       <img src="{% static 'images/ele3.webp' %}" alt="">
+            <h3>laptop</h3>
+            <p>cost:50000</p>
+        </div>
+        <div class="card">
+        <img src="{% static 'images/ele4.webp' %}" alt="">
+            <h3>tab</h3>
+            <p>cost:19600</p>
+        </div>
+    </div>
+</body>
+</html>
